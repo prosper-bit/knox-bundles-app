@@ -1,75 +1,138 @@
-# ⚡ Knox Bundles - Professional Data Bundle Store
+# Knox Bundles - Telegram Mini App
 
-A premium Telegram Mini App for selling data bundles with admin panel.
+⚡ **Professional data bundle selling platform with admin panel**
 
-## 🚀 Quick Start
+## 🚀 Features
 
-### 1. Configure
-```bash
-# Edit .env file with your bot details
-BOT_TOKEN=your_bot_token_from_botfather
+- **Multi-Network Support**: MTN, AirtelTigo, Telecel
+- **Real-time Admin Notifications**: Instant Telegram alerts for new orders
+- **Customer Confirmations**: Automatic order confirmations via Telegram
+- **Admin Panel**: Manage bundles, view orders, update settings
+- **Mobile-First Design**: Optimized for Telegram Mini Apps
+- **Secure Payment Flow**: Mobile Money integration with reference tracking
+
+## 🛠️ Tech Stack
+
+- **Backend**: Node.js + Express
+- **Frontend**: Vanilla JavaScript + CSS3
+- **Bot Integration**: Telegram Bot API
+- **Deployment**: Vercel (Serverless)
+- **Database**: LocalStorage (can be upgraded to PostgreSQL/MongoDB)
+
+## 📱 Live Demo
+
+**Production URL**: [Your Vercel URL will be here]
+
+## 🔧 Local Development
+
+### Prerequisites
+- Node.js 14+
+- Telegram Bot Token (from @BotFather)
+- Admin Chat ID
+
+### Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/[your-username]/knox-bundles-app.git
+   cd knox-bundles-app
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Configure environment variables**
+   ```bash
+   cp .env.example .env
+   # Edit .env with your actual values
+   ```
+
+4. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Visit** `http://localhost:3000`
+
+## 🚀 Deployment
+
+### Deploy to Vercel
+
+1. **Via GitHub (Recommended)**
+   - Push to GitHub
+   - Connect repository to Vercel
+   - Add environment variables
+   - Deploy automatically
+
+2. **Via Vercel CLI**
+   ```bash
+   npx vercel --prod
+   ```
+
+### Environment Variables
+
+Set these in your deployment platform:
+
+```env
+BOT_TOKEN=your_telegram_bot_token
 ADMIN_CHAT_ID=your_telegram_chat_id
 ```
 
-### 2. Run
-```bash
-npm install
-npm start
-```
+## 📋 API Endpoints
 
-### 3. Access
-- **App**: http://localhost:3000
-- **Admin**: Click settings icon (⚙️) → password: `knox2024`
+- `GET /` - Main app interface
+- `POST /api/orders` - Process new orders
+- `GET /api/health` - Health check
 
-### 4. Make Public
-```bash
-# Install ngrok
-npm install -g ngrok
+## 🎯 Usage
 
-# Make public
-ngrok http 3000
+### For Customers
+1. Open the Telegram Mini App
+2. Select network provider
+3. Choose data bundle
+4. Enter phone number
+5. Make payment via Mobile Money
+6. Receive instant confirmation
 
-# Set ngrok URL in @BotFather menu button
-```
+### For Admins
+1. Receive real-time order notifications
+2. Process payments manually
+3. Manage bundles via admin panel
+4. View order history and analytics
 
-## 🔧 Admin Features
+## 🔐 Security Features
 
-### Bundle Management:
-- **Add bundles**: Click "Add Bundle" in admin panel
-- **Edit bundles**: Click edit icon (✏️) next to any bundle
-- **Delete bundles**: Click delete icon (🗑️) next to any bundle
-- **Update prices**: Edit any bundle and save
+- Environment variable protection
+- Input validation and sanitization
+- CORS configuration
+- Error handling and logging
 
-### Settings:
-- Update mobile money numbers in Settings tab
-- View customer orders in Orders tab
-- Manage bundles for MTN, AirtelTigo, Telecel
+## 📊 Bundle Management
 
-## 📱 Features
+Admins can:
+- Add/edit/delete bundles for each network
+- Update Mobile Money numbers
+- View order statistics
+- Export order data
 
-- Professional mobile app interface
-- Real-time bundle management
-- Order tracking and notifications
-- Multi-network support (MTN, AirtelTigo, Telecel)
-- Secure admin panel
-- Mobile money integration
+## 🤝 Contributing
 
-## 🌐 Deploy
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
-### Vercel (Free):
-```bash
-npm install -g vercel
-vercel
-```
+## 📄 License
 
-### Heroku:
-```bash
-git init
-git add .
-git commit -m "Knox Bundles"
-heroku create knox-bundles
-git push heroku main
-```
+MIT License - see LICENSE file for details
+
+## 📞 Support
+
+- **Telegram**: @KnoxBundlesSupport
+- **Email**: support@knoxbundles.com
+- **Issues**: GitHub Issues
 
 ---
 
