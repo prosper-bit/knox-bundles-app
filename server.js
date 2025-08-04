@@ -10,7 +10,8 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static('.'));
+app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Telegram Bot setup
 const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: false });

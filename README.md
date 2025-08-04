@@ -21,7 +21,7 @@
 
 ## 📱 Live Demo
 
-**Production URL**: [Your Vercel URL will be here]
+**Production URL**: https://knox-bundles-app.vercel.app
 
 ## 🔧 Local Development
 
